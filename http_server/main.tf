@@ -1,9 +1,5 @@
 variable "instance_type" {}
 
-provider "aws" {
-  region = "ap-northeast-1"
-}
-
 resource "aws_instance" "default" {
   ami                    = "ami-0992fc94ca0f1415a"
   instance_type          = var.instance_type

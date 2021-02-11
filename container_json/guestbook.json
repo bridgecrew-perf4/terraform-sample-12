@@ -1,0 +1,13 @@
+[
+  {
+    "name":"guestbook",
+    "image":"k8s.gcr.io/guestbook:v3",
+    "essential":true,
+    "portMappings":[
+      {
+        "protocol":"tcp",
+        "containerPort":80
+      }
+    ]
+  }
+]

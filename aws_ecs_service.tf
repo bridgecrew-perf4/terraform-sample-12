@@ -21,7 +21,7 @@ resource "aws_ecs_service" "example" {
     target_group_arn = aws_lb_target_group.example.arn
     #container_name   = "example"
     container_name   = "guestbook"
-    container_port = 80
+    container_port = 3000
   }
 
   lifecycle {

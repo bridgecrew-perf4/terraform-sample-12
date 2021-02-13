@@ -28,10 +28,7 @@ resource "aws_security_group_rule" "egress" {
   security_group_id = aws_security_group.default.id
 }
 
-<<<<<<< HEAD
 #値の受け渡しのために定義
-=======
->>>>>>> 7542fde54ac12ccae04c764ad2e4d55d84cb0b3a
 output "security_group_id" {
   value = aws_security_group.default.id
 }

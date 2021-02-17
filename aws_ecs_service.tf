@@ -21,7 +21,7 @@ resource "aws_ecs_service" "example" {
   load_balancer {
     target_group_arn = aws_lb_target_group.example.arn
     #container_name   = "example"
-    container_name   = "guestbook"
+    container_name = "guestbook"
     container_port = 3000 # The port on the container to associate with the load balancer.
   }
 
@@ -29,7 +29,7 @@ resource "aws_ecs_service" "example" {
     ignore_changes = [task_definition]
   }
 
-  depends_on = [ aws_lb.example ]
+  depends_on = [aws_lb.example]
 }
 
 module "nginx_sg" {

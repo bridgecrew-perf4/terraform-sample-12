@@ -2,7 +2,7 @@ resource "aws_lb_target_group" "example" {
   name                 = "example"
   target_type          = "ip"
   vpc_id               = aws_vpc.project_ecs.id
-  port                 = 3000
+  port                 = 80 #The port on which targets receive traffic, unless overridden when registering a specific target
   protocol             = "HTTP"
   deregistration_delay = 300
 

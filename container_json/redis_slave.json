@@ -1,0 +1,13 @@
+[
+  {
+    "name":"redis-slave",
+    "image":"k8s.gcr.io/redis-slave:v2",
+    "essential":true,
+    "portMappings":[
+      {
+        "protocol":"tcp",
+        "containerPort":6379
+      }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "name":"redis-master",
+    "image":"k8s.gcr.io/redis:e2e",
+    "essential":true,
+    "portMappings":[
+      {
+        "protocol":"tcp",
+        "containerPort":6379
+      }
+    ]
+  }  
+]

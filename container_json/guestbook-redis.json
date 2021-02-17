@@ -1,0 +1,29 @@
+[
+  {
+    "name":"guestbook",
+    "image":"k8s.gcr.io/guestbook:v3",
+    "essential":true,
+    "portMappings":[
+      {
+        "protocol":"tcp",
+        "containerPort":3000
+      }
+    ]
+  },
+  {
+    "name":"redis-master",
+    "image":"k8s.gcr.io/redis:e2e",
+    "essential":true,
+    "portMappings":[
+      {
+        "protocol":"tcp",
+        "containerPort":6379
+      }
+    ]
+  },
+  {
+    "name":"redis-slave",
+    "image":"k8s.gcr.io/redis-slave:v2",
+    "essential":true
+  }    
+]
